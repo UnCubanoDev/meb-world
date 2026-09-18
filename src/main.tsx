@@ -5,9 +5,11 @@ import App from './App'
 import './index.css'
 
 // Registro del service worker (PWA) — solo en producción
+// Ruta relativa (BASE_URL = './') para que funcione en subdirectorios
+// como GitHub Pages (/meb-world/) y no en la raíz del dominio.
 if ('serviceWorker' in navigator && import.meta.env.PROD) {
   window.addEventListener('load', () => {
-    navigator.serviceWorker.register('/sw.js').catch(() => {
+    navigator.serviceWorker.register(import.meta.env.BASE_URL + 'sw.js').catch(() => {
       /* silencioso en demo */
     })
   })
