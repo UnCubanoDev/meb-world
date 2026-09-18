@@ -18,9 +18,9 @@ jobs:
   build:
     runs-on: ubuntu-latest
     env:
-      # El .npmrc local redirige el cache a G:\ (unidad C: llena en la máquina del dev).
-      # En CI esa ruta no existe: la env var tiene precedencia sobre .npmrc.
-      npm_config_cache: ${{ runner.temp }}/npm-cache
+      # El .npmrc local redirige el cache a G:\ (solo válido en la máquina del dev).
+      # En CI (Linux) esa ruta no existe: la env var tiene precedencia sobre .npmrc.
+      npm_config_cache: /tmp/npm-cache
     steps:
       - uses: actions/checkout@v4
 
