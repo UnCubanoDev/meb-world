@@ -1,0 +1,22 @@
+# Dependencias y build
+node_modules/
+dist/
+*.tsbuildinfo
+
+# Cache npm redirigido a G: (unidad C: llena)
+.npm-cache/
+
+# Referencias temporales de Stitch (no versionar)
+.tmp-stitch/
+
+# IDE
+.idea/
+.vscode/
+
+# Logs
+*.log
+npm-debug.log*
+
+# Sistema
+Thumbs.db
+.DS_Store

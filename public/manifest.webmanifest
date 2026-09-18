@@ -1,0 +1,22 @@
+{
+  "name": "MEB WORLD — Mamá Estoy Brillando",
+  "short_name": "MEB WORLD",
+  "description": "Plataforma oficial de Mamá Estoy Brillando: música, videos y backstage exclusivo.",
+  "id": "/",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#070708",
+  "theme_color": "#070708",
+  "lang": "es",
+  "categories": ["music", "entertainment"],
+  "icons": [
+    {
+      "src": "./favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}
